@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML</title>
+<!-----------Print Cdn------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js" integrity="sha512-MpDFIChbcXl2QgipQrt1VcPHMldRILetapBl5MPCA9Y8r7qvlwx1/Mc9hNTzY+kS5kX6PdoDq41ws1HiVNLdZA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-----------FONT ASOWAM---------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-----------End Font ASOWAM------------>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- ========== header Section ========== -->
+
+    <header>
+        <div class="brand">
+            <h1 id="brand-name">tk furniture</h1>
+        </div>
+        <div class="nav">
+            <li>home</li>
+            <li>latest</li>
+            <li>popular</li>
+            <li>contact</li>
+            <li>about</li>
+        </div>
+        <div class="search">
+            <button onclick="disply('add-profile')">profile</button>
+            <button id="theme-btn">
+                <span>t</span>
+                <span>h</span>
+                <span>e</span>
+                <span>m</span>
+                <span>e</span>
+            </button>
+        </div>
+    </header>
+    
+<!-- ======== End Header Section ======= -->
+<!-- ========== Popup Section ========== -->
+
+    <popup>
+        <div class="add-profile">
+            <form action="" id="profile-form">
+                <table>
+                    <tr>
+                        <th colspan="2"><h2>profile form</h2></th>
+                    </tr>
+                    <tr>
+                        <td><span>brand name:</span></td>
+                        <td><input type="text" name="brand_name" id="" required></td>
+                    </tr>
+                    <tr>
+                        <td><span>brand logo:</span></td>
+                        <td><input type="file" name="brand_logo" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><span>description:</span></td>
+                        <td><input type="text" name="description" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><span>category:</span></td>
+                        <td><input type="text" name="category" id=""></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">set profile</button></td>
+                    </tr>
+                </table>
+            </form>
+            <div class="back">
+                <button onclick="homeDisply()">back</button>
+                <button onclick="homeDisply()">home</button>
+            </div>
+        </div>
+        <div class="add-project">
+            <form action="" id="project-form">
+                <table>
+                    <tr>
+                        <th colspan="2"><h2>Project Form</h2></th>
+                    </tr>
+                    <tr>
+                        <td>Project Name:</td>
+                        <td><input type="text" name="project_name" id="" required></td>
+                    </tr>
+                    <tr>
+                        <td>Company Name:</td>
+                        <td><input type="text" name="company_name" id="" placeholder="Tk Furniture"></td>
+                    </tr>
+                    <tr>
+                        <td>Category:</td>
+                        <td><input type="text" name="category" id="" placeholder="Furniture"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone No:</td>
+                        <td><input type="number" name="phone_no" id="" placeholder="8617711693"></td>
+                    </tr>
+                    <tr>
+                        <td>Payment:</td>
+                        <td><input type="number" name="payment" id="" placeholder="000/-"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Create</button></td>
+                    </tr>
+                </table>
+            </form>
+            <div class="back">
+                <button onclick="homeDisply()">back</button>
+                <button onclick="homeDisply()">home</button>
+            </div>
+        </div>
+        <div class="bill">
+            <table border="2">
+                <thead>
+                    <tr id="bill-info">
+                        <!--th colspan="7">
+                            <h2>sidha suburbiya</h2>
+                            <p>tk furniture</p>
+                            <p>furniture</p>
+                            <p>8617711693</p>
+                        </th-->
+                    </tr>
+                    <tr>
+                        <th>item name</th>
+                        <th>qty</th>
+                        <th>width</th>
+                        <th>height</th>
+                        <th>sft/-</th>
+                        <th>rate</th>
+                        <th>price</th>
+                    </tr>
+                </thead>
+                <tbody id="bill-tbody">
+                    <!--tr>
+                        <th>master bedroom: wardobe</th>
+                        <th>1</th>
+                        <th>4</th>
+                        <th>7</th>
+                        <th>28</th>
+                        <th>300</th>
+                        <th>8000/-</th>
+                    </tr-->
+                </tbody>
+                <tfoot id="bill-tfoot">
+                    <!--tr>
+                        <td colspan="2" rowspan="3">description</td>
+                        <td colspan="2">total:</td>
+                        <td colspan="3">170000/-</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">pay:</td>
+                        <td colspan="3">10000/-</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">balance:</td>
+                        <td colspan="3">120000/-</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7"><button>add new item</button></td>
+                    </tr-->
+                </tfoot>
+            </table>
+            <div class="back">
+                <button onclick="homeDisply()">back</button>
+                <button id="print-btn">print</button>
+            </div>
+        </div>
+        <div class="add-item">
+           
+                <table>
+                    <tr>
+                        <th colspan="4"><h2>item form</h2></th>
+                    </tr>
+                    <tr>
+                        <td><span>item name:</span></td>
+                        <td colspan="3"><input type="text" id="item_name" required></td>
+                    </tr>
+                    <tr>
+                        <td><span>width:</span></td>
+                        <td><input type="number" id="width" step="0.1" required></td>
+                        <td><span>height:</span></td>
+                        <td><input type="number" id="height" step="0.1" required></td>
+                    </tr>
+                    <tr>
+                        <td><span>rate:</span></td>
+                        <td><input type="number" id="rate" placeholder="300"></td>
+                        <td>qty:</td>
+                        <td><input type="number" id="qty" placeholder="1"></td>
+                    </tr>
+                    <tr id="add-item-btn">
+                        <td colspan="4"><button>add</button></td>
+                    </tr>
+                </table>
+            
+            <div class="back">
+                <button onclick="homeDisply()">back</button>
+                <button onclick="homeDisply()">home</button>
+            </div>
+        </div>
+    </popup>
+    
+<!-- ======== End Popup Section ======= -->
+<!-- ========== Main Section ========== -->
+
+    <main>
+        <div class="project-list">
+            <!--li>
+                <p>sidha suburbiya</p>
+                <span>
+                    <i class="fa-regular fa-eye" style="color:skyblue"></i>
+                    <i class="fa-regular fa-pen-to-square" style="color:indigo"></i>
+                    <i class="fa-solid fa-trash-can" style="color:red"></i>
+                </span>
+            </li-->
+        </div>
+        <div class="list-btn">
+            <button onclick="disply('add-project')">add new project</button>
+        </div>
+    </main>
+    
+<!-- ======== End Main Section ======= -->
+<!-- ========== Footer Section ========== -->
+
+    <footer>
+        <p>@copyright by: tk furniture 2024-25</p>
+    </footer>
+    
+<!-- ======== End Footer Section ======= -->
+  
+  
+    <script src="main.js"></script>
+</body>
+</html>
